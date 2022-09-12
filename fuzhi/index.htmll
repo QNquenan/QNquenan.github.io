@@ -22,7 +22,7 @@
 		<style>
 			#shuru{background-color: darkkhaki;}
 			#mubiao{background-color: darkseagreen;}
-			body {background-image: url(miao1.jpg);}
+			body {background-image: url(/fuzhi/miao1.jpg);}
 		</style>
 	</head>
 	<body>
