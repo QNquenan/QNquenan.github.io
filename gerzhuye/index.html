@@ -4,27 +4,62 @@
 		<meta charset="utf-8">
 		<title>楠的主页</title>
 		<style>
-			body{background-image: url(4kbt.png);
+			body{background-image: url(4kbt（baise.png);
 			background-size: 100%;}
 		</style>
 		<style type="text/css">
 			.grzy {
 				color: white;
 				font-family: fangzhen;
-				font-size: 50px;
+				font-size: 47px;
 			}
 			@font-face {
 				font-family: fangzhen;
 				src: url(MaoKenShiJinHei-2.ttf);
 			}
-		</style>
+			.houzi {
+				margin-left: 8%;
+			}
+			.daohang {
+				margin-left: 11%;
+				position: relative; top: -200px
+			}
+			.guangy {
+				font-size: 20px;
+				font-family: guangy;
+				margin-right: 60%;
+				position: relative; top: -150px
+			}
+			@font-face {
+				font-family: guangy;
+				src: url(BaoTuXiaoBaiTi-2.ttf);
+			}
+			.fuzhi {
+				font-size: 20px;
+				font-family: guangy;
+				margin-right: 20%;
+				position: relative;top: -200px
+			}
+		</style><!--（position: relative; top: -200px）上下移动-->
 	</head>
 	<body>
 		<h1 align="center" class="grzy"><!--（align="center"）居中-->
 			个人主页
 		</h1>
-		<a href="http://qnquenan.github.io" class="guangy">
-			光影展示（手稿）
-		</a>
-	</body>
+		<img src="houzi.jpg" class="houzi" width="200px"/>
+		<h2 style="color: aqua;" class="daohang" dir="rtl" align="center">
+			个人作品导航
+		</h2>
+		<p class="guangy" dir="rtl">
+			光影：
+			<a href="https://qnquenan.github.io/">
+				点我跳转
+			</a>
+		</p>
+		<p class="fuzhi" dir="rtl">
+			一个网课作业（啥也办不了的自动复制）
+			<a href="https://qnquenan.github.io/fuzhi/">
+				点我跳转
+			</a>
+		</p>
 </html>
