@@ -2,128 +2,138 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 网页自适应-->
-		<title>楠的主页</title>
-		<style>
-			body{background-image: url(4kbt（baise.png);
-			background-size: 100%;}
-		</style>
+		<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/><!--mdui  CSS库-->
+		<title>个人主页</title>
 		<style type="text/css">
-			.grzy {
+			#biaoti {
+				background-color: black;
+				height: 80px;
 				color: white;
-				font-family: fangzhen;
-				font-size: 47px;
+				font-family: biaoti;
+			}
+			#celan {
+				line-height: 30px;/*字体中间间隔·*/
+				background-color: black;/*背景颜色*/
+				height: 570px;
+				width: 170px;
+				float: left;
+				padding: 5px;
+				font-family: celan;
 			}
 			@font-face {
-				font-family: fangzhen;
-				src: url(MaoKenShiJinHei-2.ttf);
-			}
-			.houzi {
-				margin-left: 8%;
-			}
-			.daohang {
-				margin-left: 11%;
-				position: relative; top: -200px
-			}
-			.guangy {
-				font-size: 20px;
-				font-family: guangy;
-				margin-right: 60%;
-				position: relative; top: -150px
-			}
-			@font-face {
-				font-family: guangy;
+				font-family: biaoti;
 				src: url(BaoTuXiaoBaiTi-2.ttf);
 			}
-			.fuzhi {
-				font-size: 20px;
-				font-family: guangy;
-				margin-right: 20%;
-				position: relative;top: -200px
-			}
-			.quenan {
-				font-size: 35px;
-				font-family: zuoce;
-				margin-left: 12%;
-				color: goldenrod;
-				position: relative; top: -160px
+			@font-face {
+				font-family: celan;
+				src: url(MaoKenShiJinHei-2.ttf)
 			}
 			@font-face {
-				font-family: zuoce;
+				font-family: zhuti;
 				src: url(HongLeiXingShuJianTi-2.otf);
 			}
-			.bibi {
-				font-size: 25px;
-				font-family: zuoce;
-				color: aqua;
-				margin-left: 8%;
-				position: relative; top: -170px
+			#a1 {
+				text-align: center;
+				line-height: 20px;/*边框距离(上下)*/
+				width: 500px;
+				padding: 10px;
+				font-family: zhuti;
+				font-size: 19px;
+				height: 930px;
 			}
-			.qie {
-				font-size: 25px;
-				font-family: zuoce;
-				color: aqua;
-				margin-left: 8%;
-				position: relative; top: -170px
+			#dibu {
+				background-color: black;
+				color: white;
+				clear: both;/*置底*/
+				text-align: center;
+				padding: 3px;
+				font-size: 23px;
+				font-family: biaoti;
 			}
-			.youx {
-				font-size: 25px;
-				font-family: zuoce;
-				color: aqua;
-				margin-left: 8%;
-				position: relative; top: -170px
+			.a2 {
+				text-align: center;
 			}
-			.ps {
-				font-family: fangzhen;
-				font-size: 26px;
-				color: red;
-				margin-left: 20%;
-				position: relative;top: -10px
+		</style>
+		<script>
+			function showMenu (thisa) {
+				thisa.style.height="300px";
 			}
-		</style><!--（position: relative; top: -200px）上下移动-->
+			function hideMenu (thisa) {
+				thisa.style.height="80px";
+			}
+		</script>
 	</head>
 	<body>
-		<h1 align="center" class="grzy"><!--（align="center"）居中-->
-			个人主页
-		</h1>
-		<img src="houzi.jpg" class="houzi" width="200px" title="呔，泼猴"/>
-		<h2 style="color: aqua;" class="daohang" dir="rtl" align="center">
-			个人作品导航
-		</h2>
-		<p class="guangy" dir="rtl">
-			光影：
-			<a href="https://qnquenan.github.io/" title="一个光影展示">
-				点我跳转
-			</a>
-		</p>
-		<p class="fuzhi" dir="rtl">
-			一个网课作业（啥也办不了的自动复制）
-			<a href="https://qnquenan.github.io/fuzhi/" title="纯练手">
-				点我跳转
-			</a>
-		</p>
-		<p class="quenan">
-			鹊楠
-		</p>
-		<p class="bibi">
-			楠的B站
-			<a href="https://space.bilibili.com/495882959?spm_id_from=333.1007.0.0" title="bilibili">
-				点我跳转
-			</a>
-		</p>
-		<p class="qie">
-			楠的企鹅
-			<a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2869505042&website=www.oicqzone.com" title="2869505042">
-				点我跳转
-			</a>
-		</p>
-		<p class="youx">
-			楠的邮箱
-			<a href="mailto:2869505042@qq.com" title="2869505042@qq.com">
-				点我跳转
-			</a>
-		</p>
-		<p class="ps">
-			因本人技术原因，网页窗口化，手机会出现排版错误等问题，请全屏食用
-		</p>
+		<div id="biaoti" onmouseover="showMenu(this)" onmouseout="hideMenu(this)" style="width: 100%;height: 80px;border: 1px black;overflow: hidden;">
+			<h1 class="a2">
+				个人主页
+			</h1>
+			<hr/>
+			<div id="celan">
+					<table width="600px">
+						<tr>
+							<td>
+								<p style="color: aqua;">
+									楠的B站&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									<a href="https://space.bilibili.com/495882959?spm_id_from=333.1007.0.0" target="_blank" title="bilibili" >
+										传送门
+									</a>
+								</p>
+							</td>
+							<td>
+								<p style="color: aqua;">
+									楠的企鹅(PC)
+									<a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2869505042&website=www.oicqzone.com" title="2869505042">传送门</a>
+								</p>
+							</td>
+							<td>
+								<p style="color: aqua;">
+								楠的邮箱&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="mailto:2869505042@qq.com" target="_blank" title="2869505042@qq.com">
+									传送门
+								</a>
+								</p>
+							</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+		<div id="a1">
+			<table cellpadding="15"><!--表格内边距-->
+				<tr>
+					<td>
+						<p dir="rtl">
+							一个网课作业
+							<a href="https://qnquenan.github.io/fuzhi/" target="_blank" title="纯练手">
+								<img class="mdui-hoverable" src="imges/一个平平无奇的测试.png" width="500px"/>
+							</a>
+						</p>
+					</td>
+					<td>
+						<p dir="ltr">
+							第一个作品（2022.9.14）
+							<a href="心安，幸福.html" target="_blank">
+								<img class="mdui-hoverable" src="imges/美文.png" width="500px" title="第一个作品" />
+							</a>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p dir="rtl">
+							光影
+							<a href="https://qnquenan.github.io/mcwz/" target="_blank" title="一个光影展示">
+								<img class="mdui-hoverable" src="imges/MC网站.png" width="500px"/>
+							</a>
+						</p>
+					</td>
+				</tr>
+			</table>
+			
+		</div>
+		<div id="dibu">
+			--Nanque&copy;--
+		</div>
+		<script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
+	</body>
 </html>
