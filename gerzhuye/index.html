@@ -64,13 +64,17 @@
 	</head>
 	<body class="mdui-drawer-body-left mdui-theme-layout-dark mdui-bottom-nav-fixed">
 		<!--顶部工具栏-->
-		<div class="mdui-toolbar mdui-shadow-10">
-		    <a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer'}" mdui-drawer-close><i class="mdui-icon material-icons">&#xe5d2;</i></a>
-		  <span class="mdui-typo-title">主页</span>
-		  <div class="mdui-toolbar-spacer"></div>
-		  <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon mdui-ripple">
-		    <i class="mdui-icon material-icons">refresh</i>
-		  </a>
+		<div class="mdui-toolbar mdui-color-grey-800 mdui-shadow-12">
+			<!--https://www.mdui.org/docs/color-->
+			<!--(mdui-drawer)抽屉-->
+			<a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer'}" mdui-drawer-close>
+			<i class="mdui-icon material-icons">&#xe5d2;</i></a>
+			<span class="mdui-typo-title">个人主页</span>
+			<div class="mdui-toolbar-spacer"></div>
+			<a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon"><!--刷新页面(javascript:location.reload();)-->
+				<i class="mdui-icon material-icons">refresh</i>
+				<!--iconfont文字图标-->
+			</a>
 		<!--顶部工具栏-->
 		<!--主体-->	
 		</div>
@@ -115,36 +119,47 @@
 		</div>
 		<!--底部-->
 		<!--抽屉导航栏-->
-		<div class="mdui-drawer mdui-shadow-24" id="left-drawer">
-			<div class="mdui-grid-tile">
-			  <a href="javascript:;"><img src="./images/bg.jpg"/></a>
-			  <div class="mdui-grid-tile-actions">
-				<div class="mdui-grid-tile-text">
-				  <div class="mdui-grid-tile-title">菜单</div>
+		<div class="mdui-drawer mdui-shadow-12" id="left-drawer">
+		<div>
+			<div class="mdui-card"><!--抽屉主页照片-->
+				<div class="mdui-card-media">
+					<img src="imges/houzi.jpg"/><!--照片路径-->
+					<div class="mdui-card-media-covered">
+						<div class="mdui-card-primary">
+							<div class="mdui-card-primary-title">鹊楠</div><!--昵称（主标题）-->
+							<div class="mdui-card-primary-subtitle">咕咕咕~~</div><!--副标题-->
+						</div>
+					</div>
 				</div>
-			  </div>
+			</div>
 			</div>
 			<ul class="mdui-list">
-			  <a href="#">
-			  <li class="mdui-list-item mdui-ripple">
-			  <i class="mdui-list-item-icon mdui-icon material-icons">&#xe88a;</i>
-				<div class="mdui-list-item-content">主页</div>
-			  </li>
-			  </a>
-			  <a href="./blogs/index.html">
-			  <li class="mdui-list-item mdui-ripple">
-				<i class="mdui-list-item-icon mdui-icon material-icons">&#xe865;</i>
-				<div class="mdui-list-item-content">博客</div>
-			  </li>
-			  </a>
-			  <a href="/Games/Recall/index.html">
-			   <li class="mdui-list-item mdui-ripple">
-				 <i class="mdui-list-item-icon mdui-icon material-icons">&#xe865;</i>
-				 <div class="mdui-list-item-content">《回溯》</div>
-			   </li>
-			   </a>
+				<a href="mailto:2869505042@qq.com" target="_blank" title="2869505042@qq.com"><!--套a标签-->
+					<li class="mdui-list-item mdui-ripple mdui-shadow-4" >
+						<i class="mdui-icon material-icons">&#xe159;</i><!--文字图标-->
+						<div class="mdui-list-item-content"> &nbsp; &nbsp; &nbsp; &nbsp;楠的邮箱</div><!--文本-->
+					</li>
+				</a>
+				<a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2869505042&website=www.oicqzone.com" title="2869505042">
+					<li class="mdui-list-item mdui-ripple mdui-shadow-4">
+						<i class="mdui-icon material-icons">&#xe7ef;</i>
+						<div class="mdui-list-item-content"> &nbsp; &nbsp; &nbsp; &nbsp;楠的QQ(pc)</div>
+					</li>
+				</a>
+				<a href="https://qm.qq.com/cgi-bin/qm/qr?k=i4cqkcKVkjnXlJ_28E_uDF2YsM2ofZbb&noverify=0&personal_qrcode_source=3" title="2869505042">	
+					<li class="mdui-list-item mdui-ripple mdui-shadow-4">
+						<i class="mdui-icon material-icons">&#xe7ef;</i>
+						<div class="mdui-list-item-content"> &nbsp; &nbsp; &nbsp; &nbsp;楠的QQ(手机)</div>
+					</li>
+				</a>
+				<a href="https://space.bilibili.com/495882959?spm_id_from=333.1007.0.0" target="_blank" title="bilibili" >
+					<li class="mdui-list-item mdui-ripple mdui-shadow-4">
+						<i class="mdui-icon material-icons">&#xe63b;</i>
+						<div class="mdui-list-item-content"> &nbsp; &nbsp; &nbsp; &nbsp;楠的B站</div>
+					</li>
+				</a>
 			</ul>
-		 </div>
+		</div>
 		<!--抽屉导航栏-->
 		<script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
 	</body>
