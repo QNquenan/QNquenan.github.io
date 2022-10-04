@@ -8,7 +8,7 @@
 		<meta content="black" name="apple-mobile-web-app-status-bar-style">
 		<meta content="320" name="MobileOptimized">
 		<!--适配手机-->
-		<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+		<link rel="stylesheet" href="mdui-v1.0.2/css/mdui.min.css" />
 		<!--mdui  CSS库-->
 		<title>个人主页</title>
 		<style type="text/css">
@@ -70,7 +70,7 @@
 		<!--顶部工具栏-->
 		<div class="mdui-toolbar mdui-color-grey-800 mdui-shadow-12">
 			<!--https://www.mdui.org/docs/color-->
-			<a mdui-drawer="{target: '#114514'}" mdui-drawer-close class="mdui-btn mdui-btn-icon">
+			<a mdui-drawer="{target: '#chouti'}" mdui-drawer-close class="mdui-btn mdui-btn-icon">
 				<!--(mdui-drawer)抽屉-->
 				<i class="mdui-icon material-icons">menu</i>
 			</a>
@@ -81,8 +81,50 @@
 				<!--iconfont文字图标-->
 			</a>
 		<!--顶部工具栏-->
+		<!--主体-->	
+		</div>
+		<div class="mdui-center" id="a1">
+			<table cellpadding="35">
+				<tr>
+					<td>
+						<p dir="rtl">
+							一个网课作业
+							<a href="https://qnquenan.github.io/fuzhi/" target="_blank" title="纯练手">
+								<img class="img mdui-center mdui-hoverable mdui-img-fluid" src="imges/一个平平无奇的测试.png" />
+							</a>
+						</p>
+					</td>
+				</tr>
+				<tr>	
+					<td>
+						<p dir="ltr">
+							第一个作品（2022.9.14）
+							<a href="心安，幸福.html" target="_blank">
+								<img class="img mdui-center mdui-hoverable mdui-img-fluid" src="imges/美文.png" title="第一个作品" />
+							</a>
+						</p>
+					</td>
+				</tr>	
+				<tr>
+					<td>
+						<p dir="rtl">
+							光影
+							<a href="https://qnquenan.github.io/" target="_blank" title="一个光影展示">
+								<img class="img mdui-center mdui-hoverable mdui-img-fluid" src="imges/MC网站.png" />
+							</a>
+						</p>
+					</td>
+				</tr>
+			</table>	
+		</div>
+		<!--主体-->
+		<!--底部-->
+		<div class="mdui-center mdui-bottom-nav mdui-bottom-nav-text-auto mdui-bottom-nav-scroll-hide mdui-color-grey-800 mdui-shadow-24">
+			<p id="zhuti" class="mdui-text-center">--Nanque&copy;--</p>
+		</div>
+		<!--底部-->
 		<!--抽屉导航栏-->
-		<div class="mdui-drawer mdui-shadow-12" id="114514">
+		<div class="mdui-drawer mdui-shadow-12" id="chouti">
 			<div class="mdui-card"><!--抽屉主页照片-->
 				<div class="mdui-card-media">
 					<img src="imges/houzi.jpg"/><!--照片路径-->
@@ -121,49 +163,7 @@
 				</a>
 			</ul>
 		</div>
-		<!--抽屉导航栏-->	
-		<!--主体-->	
-		</div>
-		<div class="mdui-center" id="a1">
-			<table cellpadding="35">
-				<tr>
-					<td>
-						<p dir="rtl">
-							一个网课作业
-							<a href="https://qnquenan.github.io/fuzhi/" target="_blank" title="纯练手">
-								<img class="img mdui-center mdui-hoverable mdui-img-fluid" src="imges/一个平平无奇的测试.png" />
-							</a>
-						</p>
-					</td>
-				</tr>
-				<tr>	
-					<td>
-						<p dir="ltr">
-							第一个作品（2022.9.14）
-							<a href="心安，幸福.html" target="_blank">
-								<img class="img mdui-center mdui-hoverable mdui-img-fluid" src="imges/美文.png" title="第一个作品" />
-							</a>
-						</p>
-					</td>
-				</tr>	
-				<tr>
-					<td>
-						<p dir="rtl">
-							光影
-							<a href="https://qnquenan.github.io/" target="_blank" title="一个光影展示">
-								<img class="img mdui-center mdui-hoverable mdui-img-fluid" src="imges/MC网站.png" />
-							</a>
-						</p>
-					</td>
-				</tr>
-			</table>	
-		</div>
-		<!--主体-->
-		<!--底部
-		<div class="mdui-center mdui-bottom-nav mdui-bottom-nav-text-auto mdui-bottom-nav-scroll-hide mdui-color-grey-800 mdui-shadow-24">
-			<p id="zhuti" class="mdui-text-center">--Nanque&copy;--</p>
-		</div>
-		底部-->
-		<script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
+		<!--抽屉导航栏-->
+		<script src="mdui-v1.0.2/js/mdui.min.js"></script>
 	</body>
 </html>
