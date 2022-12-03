@@ -1,24 +1,9 @@
-@font-face {
-	font-family:biaoti ;
-	src: url(/fonts/YunFengFeiYunTi-2.ttf);
-} 
-
-@font-face {
-	font-family: yyziti;
-	src: url(/fonts/Yunmobei-enfont2.0-Regular-2.ttf);
-}
-
-#yyzt {
-	font-family: yyziti;
-}
-
 .grzy {
 	z-index: 100;
 }
 
-a {
-	text-decoration: none;
-	color: black;
+.a {
+	text-decoration: none;color: black;
 }
 
 body {
