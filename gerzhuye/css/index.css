@@ -75,7 +75,7 @@
 }
 
 .rin-card-content {
-    font-size: 17px;
+    font-size: 15px;
     color: white;
     margin-bottom: 5px;
     line-height: 1.5;
@@ -228,12 +228,6 @@
 #last .rin-card-title2 {
     letter-spacing: 10px;
     margin-bottom: 10px;
-}
-
-#last .rin-card-content {
-    font-size: 12px;
-    letter-spacing: 1em;
-    opacity: .5;
 }
 
 #footer {
