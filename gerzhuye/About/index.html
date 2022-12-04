@@ -15,8 +15,100 @@
 		<link rel="stylesheet" href="../css/font.css">
 		<link rel="icon" href="../images/logo.jpg"><!--logo-->
 		<title>About</title>
+		<script type="text/javascript" src="../js/jquery-2.0.2.min.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
+		<script>
+		    /*加载等待秒数*/
+		    $(window).load(function () {
+		        $("#loading").fadeOut(500);
+		    }) 
+		</script>
+		<style>
+		    /*加载样式*/
+		    #loading {
+		        background-color: #383838;
+		        height: 100%;
+		        width: 100%;
+		        position: fixed;
+		        z-index: 1;
+		        margin-top: 0px;
+		        top: 0px;
+		    }
+		
+		    #loading-center {
+		        width: 100%;
+		        height: 100%;
+		        position: relative;
+		    }
+		
+		    #loading-center-absolute {
+		        position: absolute;
+		        left: 50%;
+		        top: 50%;
+		        height: 200px;
+		        width: 200px;
+		        margin-top: -100px;
+		        margin-left: -100px;
+		    }
+		
+		    #object {
+		        width: 80px;
+		        height: 80px;
+		        background-color: #FFF;
+		        -webkit-animation: animate 1s infinite ease-in-out;
+		        animation: animate 1s infinite ease-in-out;
+		        margin-right: auto;
+		        margin-left: auto;
+		        margin-top: 60px;
+		    }
+		
+		    @-webkit-keyframes animate {
+		        0% {
+		            -webkit-transform: perspective(160px);
+		        }
+		
+		        50% {
+		            -webkit-transform: perspective(160px) rotateY(-180deg);
+		        }
+		
+		        100% {
+		            -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg);
+		        }
+		    }
+		
+		    @keyframes animate {
+		        0% {
+		            transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+		            -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+		        }
+		
+		        50% {
+		            transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+		            -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+		        }
+		
+		        100% {
+		            transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+		            -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+		        }
+		    }
+		
+		    /*圆角图片*/
+		    .circle {
+		        width: 110px;
+		        border-radius: 10%;
+		    }
+		</style>
 	</head>
 	<body class="mdui-drawer-body-left mdui-bottom-nav-fixed" style="background-image: url(../images/back-1.jpg);">
+		<!--加载样式-->
+		<div id="loading">
+		    <div id="loading-center">
+		        <div id="loading-center-absolute">
+		            <div id="object"></div>
+		        </div>
+		    </div>
+		</div>
 		<!--顶部工具栏-->
 			<div class="mdui-toolbar mdui-shadow-12 mdui-color-light-green-100">
 				<!--https://www.mdui.org/docs/color-->
@@ -115,8 +207,8 @@
 				                <div class="rin-card-part" id="introduce" style="margin-top: 0;">
 				                    <div class="rin-card-content mdui-typo mdui-text-color-white-text font3" style="font-size: 20px;">个人主页部分代码借鉴于<a href="https://seir.in/" target="_blank" title="AyagawaSeirin大佬的主页">AyagawaSeirin</a>大佬<br>
 				                        感谢<a href="https://auog.ga" target="_blank" title="老六">老六</a>的鼎力相助<br>
-										最后一次修改时间：2022-12-3<br />
-										V 4.0.1<br />
+										最后一次修改时间：2022-12-4<br />
+										V 4.0.5<br />
 				                        <del>欧这糟糕的配色</del><br>
 				                    </div>
 				                </div>

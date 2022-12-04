@@ -9,14 +9,106 @@
 		<meta content="320" name="MobileOptimized">
 		<link rel="stylesheet" href="https://at.alicdn.com/t/font_1625701_q2422cy34wn.css"><!--图标-->
 		<link rel="stylesheet" href="../mdui-v1.0.2/css/mdui.min.css" />
-		<link rel="stylesheet" href="./css/main.css">
+		
 		<link rel="stylesheet" href="./css/index.css">
 		<link rel="stylesheet" href="./css/grzy2.css" />
 		<link rel="stylesheet" href="./css/font.css">
-		<link rel="icon" href="./images/logo.jpg"><!--logo-->
+		<link rel="icon" href="../images/logo.jpg"><!--logo-->
 		<title>个人主页</title>
+		<script type="text/javascript" src="./js/jquery-2.0.2.min.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+		<script>
+		    /*加载等待秒数*/
+		    $(window).load(function () {
+		        $("#loading").fadeOut(500);
+		    }) 
+		</script>
+		<style>
+		    /*加载样式*/
+		    #loading {
+		        background-color: #383838;
+		        height: 100%;
+		        width: 100%;
+		        position: fixed;
+		        z-index: 1;
+		        margin-top: 0px;
+		        top: 0px;
+		    }
+		
+		    #loading-center {
+		        width: 100%;
+		        height: 100%;
+		        position: relative;
+		    }
+		
+		    #loading-center-absolute {
+		        position: absolute;
+		        left: 50%;
+		        top: 50%;
+		        height: 200px;
+		        width: 200px;
+		        margin-top: -100px;
+		        margin-left: -100px;
+		    }
+		
+		    #object {
+		        width: 80px;
+		        height: 80px;
+		        background-color: #FFF;
+		        -webkit-animation: animate 1s infinite ease-in-out;
+		        animation: animate 1s infinite ease-in-out;
+		        margin-right: auto;
+		        margin-left: auto;
+		        margin-top: 60px;
+		    }
+		
+		    @-webkit-keyframes animate {
+		        0% {
+		            -webkit-transform: perspective(160px);
+		        }
+		
+		        50% {
+		            -webkit-transform: perspective(160px) rotateY(-180deg);
+		        }
+		
+		        100% {
+		            -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg);
+		        }
+		    }
+		
+		    @keyframes animate {
+		        0% {
+		            transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+		            -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+		        }
+		
+		        50% {
+		            transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+		            -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+		        }
+		
+		        100% {
+		            transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+		            -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+		        }
+		    }
+		
+		    /*圆角图片*/
+		    .circle {
+		        width: 110px;
+		        border-radius: 10%;
+		    }
+		</style>
 	</head>
-	<body class="mdui-drawer-body-left mdui-bottom-nav-fixed" style="background-image: url(./images/back-1.jpg);">
+	<body class="mdui-drawer-body-left mdui-bottom-nav-fixed" style="background-image: url(../images/back-1.jpg);">
+		<!--加载样式-->
+		<div id="loading">
+		    <div id="loading-center">
+		        <div id="loading-center-absolute">
+		            <div id="object"></div>
+		        </div>
+		    </div>
+		</div>
 		<!--顶部工具栏-->
 			<div class="mdui-toolbar mdui-shadow-12 mdui-color-light-green-100">
 				<!--https://www.mdui.org/docs/color-->
@@ -77,7 +169,7 @@
 			<div class="mdui-drawer mdui-shadow-24 mdui-color-light-green-100" id="chouti">
 				<div class="mdui-card"><!--抽屉主页照片-->
 					<div class="mdui-card-media">
-						<img src="./images/houzi.jpg"/><!--照片路径-->
+						<img src="../images/houzi.jpg"/><!--照片路径-->
 						<div class="mdui-card-media-covered">
 							<div class="mdui-card-primary">
 								<div class="mdui-card-primary-title font4">鹊楠</div><!--昵称（主标题）-->
@@ -87,7 +179,7 @@
 					</div>	
 				</div>
 				<ul class="mdui-list" >
-					<a href="About" title="About"><!--套a标签-->
+					<a href="grzy;about.html" title="About"><!--套a标签-->
 						<li class="mdui-list-item mdui-ripple mdui-hoverable font5">
 							<i class="mdui-icon material-icons">&#xe88f;</i>
 							About
@@ -96,7 +188,7 @@
 				</ul>
 				<hr style="margin: 0px;border: 1px solid black;" />
 				<ul class="mdui-list" >
-					<a href="https://qnquenan.github.io/lians" title="练手作品"><!--套a标签-->
+					<a href="grzy;qtzp.html" title="练手作品"><!--套a标签-->
 						<li class="mdui-list-item mdui-ripple mdui-hoverable font5">
 							<i class="mdui-icon material-icons">&#xe069;</i>
 							练手作品
