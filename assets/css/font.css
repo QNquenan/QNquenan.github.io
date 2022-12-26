@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "font1";
+    src: url(../fonts/Yunmobei-enfont2.0-Regular-2.ttf);
+}
+
+.font1{
+    font-family: "font1";
+}
+
+
+@font-face {
+	font-family: "font2";
+	src: url(../fonts/HongLeiXingShuJianTi-2.otf);
+}
+
+.font2 {
+	font-family: "font2";
+}
+
+@font-face {
+	font-family: "font3";
+	src: url(../fonts/JinNianYeYaoJiaYouYa-2.ttf);
+}
+
+.font3 {
+	font-family: "font3";
+}
+
+@font-face {
+	font-family: "font4";
+	src: url(../fonts/YunFengFeiYunTi-2.ttf);
+}
+
+.font4 {
+	font-family: "font4";
+}
+
+@font-face {
+	font-family: "font5";
+	src: url(../fonts/MaoKenShiJinHei-2.ttf);
+}
+
+.font5 {
+	font-family: "font5";
+}
+
+@font-face {
+	font-family: "font6";
+	src: url(../fonts/BaoTuXiaoBaiTi-2.ttf);
+}
+
+.font6 {
+	font-family: "font6";
+}

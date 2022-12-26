@@ -1,0 +1,20 @@
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-QQ:before {
+	content: "\e882";
+}
+
+/* CDN 服务仅供平台体验和调试使用，平台不诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+	font-family: 'iconfont';
+	/* Project id 3839439 */
+	src: url('//at.alicdn.com/t/c/font_3839439_t80m2sxwpcr.woff2?t=1672032715809') format('woff2'),
+		url('//at.alicdn.com/t/c/font_3839439_t80m2sxwpcr.woff?t=1672032715809') format('woff'),
+		url('//at.alicdn.com/t/c/font_3839439_t80m2sxwpcr.ttf?t=1672032715809') format('truetype');
+}
