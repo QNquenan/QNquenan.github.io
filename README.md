@@ -1,2 +1,13 @@
-# QNquenan.github.io
-个人主页源码，需要自取（应该没人看得上）
+<!-- # QNquenan.github.io -->
+# <a href="http://quenan.top" target="_blank"><font color="black">quenan.top</font></a>
+
+### <center>更新日志</center>
+
+---
+
+## 2023.3.23
+- 小于1024px的响应增加头像
+- 修改鼠标指针
+- 修改分享界面响应式布局
+- 修改分享界面下载方法
+- 修改分享界面标语

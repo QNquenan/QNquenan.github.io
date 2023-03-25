@@ -1,0 +1,29 @@
+.img-h {
+    width: 600px;
+    height: 350px;
+}
+
+.img-w {
+    width: 600px;
+    height: 700px;
+}
+
+.mdui-typo a:before {
+    position: static !important;
+}
+
+.font3 img {
+    cursor: url(../img/shub-lianj.png), auto !important;
+}
+
+@media only screen and (max-width:1024px) {
+    .img-h {
+        width: 600px;
+        height: 200px;
+    }
+
+    .img-w {
+        width: 600px;
+        height: auto;
+    }
+}
