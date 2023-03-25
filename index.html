@@ -24,7 +24,7 @@
 			.loading-div {
 				width: 1800px;
 				height: 950px;
-				background-color: rgba(0, 0, 0, 0.6.5);
+				background-color: rgba(0, 0, 0, 0.7);
 				display: table-cell;
 				vertical-align: middle;
 				color: white;
@@ -34,7 +34,23 @@
 				z-index: 100;
 				transition-duration: 1.2s;
 			}
-	
+
+			@media only screen and (max-width:1024px) {
+				.ld {
+					position: relative !important;
+    				top: 318px !important;
+    				left: -239px !important;
+				}				
+			}
+			
+			@media only screen and (max-width:768px) {
+				.ld {
+					position: relative !important;
+   					top: 323px !important;
+    				left: -706px !important;
+				}
+			}
+
 			.loading-div::before {
 				display: inline-block;
 				vertical-align: middle;
@@ -59,7 +75,7 @@
 	</head>
 	<body class="mdui-theme-primary-pink mdui-theme-accent-pink">
 		<div class="loading-div">
-			<i class="fa fa-spinner fa-pulse fa-3x fa-fw "></i>
+			<i class="ld fa fa-spinner fa-pulse fa-3x fa-fw "></i>
 			<span class="sr-only">Loading...</span>
 		</div>
 		<div id="rin-bg"></div>
