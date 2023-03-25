@@ -1,3 +1,27 @@
+* {
+    cursor: url(../img/shub.png), auto !important;
+}
+
+a {
+    cursor: url(../img/shub-lianj.png), auto !important;
+}
+
+.zplj div {
+    cursor: url(../img/shub-lianj.png), auto !important;
+}
+
+.zplj big {
+    cursor: url(../img/shub-lianj.png), auto !important;
+}
+
+.zplj b {
+    cursor: url(../img/shub-lianj.png), auto !important;
+}
+
+.zplj small {
+    cursor: url(../img/shub-lianj.png), auto !important;
+}
+
 #rin-main {
     /*padding: 20px 25px;*/
     padding: 20px 0;
@@ -134,9 +158,6 @@
 @media only screen and (max-width: 1024px) {
     .rin-btn {
         margin-bottom: 10px;
-    }
-    .rin-logo img {
-        display:none;
     }
     .rin-left-title {
         font-size: 30px;
