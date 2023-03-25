@@ -23,7 +23,7 @@
 	
 			.loading-div {
 				width: 1800px;
-				height: 1000px;
+				height: 950px;
 				background-color: rgba(0, 0, 0, 0.5);
 				display: table-cell;
 				vertical-align: middle;
@@ -41,11 +41,11 @@
 			}
 		</style>
 		<script>
-			//注释部分是设置2秒的定时延迟，timeout结束后加载网页
+			//注释部分是设置2.5秒的定时延迟，timeout结束后加载网页
 			setTimeout(() => {
 			$(".loading-div").hide();
 			$('body').css('overflow-y','scroll');
-			}, 2000);
+			}, 2500);
 			//这是根据js判断，页面加载完毕就显示
 			// document.onreadystatechange = function () {
 			// 	if (document.readyState == "complete") {
@@ -58,7 +58,7 @@
 	</head>
 	<body class="mdui-theme-primary-pink mdui-theme-accent-pink">
 		<div class="loading-div">
-			<i class="fa fa-spinner fa-pulse fa-3x fa-fw "></i>
+			<!-- <i class="fa fa-spinner fa-pulse fa-3x fa-fw "></i> -->
 			<span class="sr-only">Loading...</span>
 		</div>
 		<div id="rin-bg"></div>
