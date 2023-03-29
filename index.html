@@ -1,277 +1,228 @@
 <html lang="zh-CN">
-	<head>
-		<meta charset="utf-8">
-		<title>鹊楠</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-		<link rel="stylesheet" href="https://at.alicdn.com/t/font_1625701_q2422cy34wn.css">
-		<!--图标-->
-		<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-		<link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/mdui/css/mdui.min.css">
-		<link rel="stylesheet" href="./assets/css/index.css">
-		<link rel="stylesheet" href="./assets/css/iconfont.css">
-		<link rel="stylesheet" href="./assets/css/main.css">
-		<link rel="stylesheet" href="./assets/css/font.css">
-		<link rel="stylesheet" href="https://at.alicdn.com/t/font_1625701_q2422cy34wn.css">
-		<link rel="icon" href="./assets/img/logo.jpg">
-		<style>
-			body {
-				width: 100%;
-				height: 100%;
-				overflow: hidden;
-			}
-	
-			.loading-div {
-				width: 1800px;
-				height: 950px;
-				background-color: rgb(0, 0, 0);
-				display: table-cell;
-				vertical-align: middle;
-				color: white;
-				text-align: center;
-				/* position: relative; */
-				position: absolute;
-				z-index: 100;
-			}
 
-			@media only screen and (max-width:1900px) {
-				.ld {
-					position: relative !important;
-    				top: 318px !important;
-    				left: -209px !important;
-				}				
-			}
-			
-			@media only screen and (max-width:768px) {
-				.ld {
-					position: relative !important;
-   					top: 323px !important;
-    				left: -706px !important;
-				}
-			}
+<head>
+	<meta charset="utf-8">
+	<title>鹊楠的小破站~</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1625701_q2422cy34wn.css">
+	<!--图标-->
+	<script src="assets/js/zz.js"></script>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="assets/css/zz.css">
+	<link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/mdui/css/mdui.min.css">
+	<link rel="stylesheet" href="./assets/css/index.css">
+	<link rel="stylesheet" href="./assets/css/iconfont.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/font.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1625701_q2422cy34wn.css">
+	<link rel="icon" href="./assets/img/logo.jpg">
+	<style>
+		::-webkit-scrollbar{display: none;}
+	</style>
+</head>
 
-			.loading-div::before {
-				display: inline-block;
-				vertical-align: middle;
-			}
-		</style>
-		<script>
-			//注释部分是设置1.5秒的定时延迟，timeout结束后加载网页
-			setTimeout(() => {
-			$(".loading-div").hide();
-			$('body').css('overflow-y','scroll');
-			}, 1500);
-			//这是根据js判断，页面加载完毕就显示
-			// document.onreadystatechange = function () {
-			// 	if (document.readyState == "complete") {
-			// 		$(".loading-div").hide();
-			// 		$('body').css('overflow', 'scroll');
-			// 	}
-			// }
-		</script>
-
-	</head>
-	<body class="mdui-theme-primary-pink mdui-theme-accent-pink">
-		<div class="loading-div">
-			<i class="ld fa fa-spinner fa-pulse fa-3x fa-fw "></i>
-			<span class="sr-only">Loading...</span>
-		</div>
-		<div id="rin-bg"></div>
-		<main id="rin-main">
-			<div class="mdui-row">
-				<div class="mdui-col-xs-12 mdui-col-md-2">
-					<div class="rin-left">
-						<div class="rin-logo">
-							<img src="./assets/img/houzi.jpg">
-						</div>
-						<div class="rin-left-title font4">&nbsp;鹊&nbsp;楠&nbsp;</div>
-						<div class="rin-left-title2 font1">QueNan</div>
-						<div class="rin-left-slogan font3">「咕咕咕，没有什么比鸽更有意思的了」</div>
-						<br />
-						<a class="font1 mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize"
-							href="about/index.html"><span class="iconfont iconabout"></span> About</a>
-						<a class="font1 mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize"
-							href="share/index.html"><i class="mdui-icon material-icons">&#xe149;</i> Share</a>
+<body class="mdui-theme-primary-pink mdui-theme-accent-pink">
+	<div class="ld">
+		<div class="loading"></div>
+	</div>
+	<div id="rin-bg"></div>
+	<main id="rin-main">
+		<div class="mdui-row">
+			<div class="mdui-col-xs-12 mdui-col-md-2">
+				<div class="rin-left">
+					<div class="rin-logo">
+						<img src="./assets/img/houzi.jpg">
 					</div>
+					<div class="rin-left-title font4">&nbsp;鹊&nbsp;楠&nbsp;</div>
+					<div class="rin-left-title2 font1">QueNan</div>
+					<div class="rin-left-slogan font3">「咕咕咕，没有什么比鸽更有意思的了」</div>
+					<br />
+					<a class="font1 mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize"
+						href="about/index.html"><span class="iconfont iconabout"></span> About</a>
+					<a class="font1 mdui-btn mdui-btn-raised rin-btn rin-btn-blue rin-btn-left mdui-text-capitalize"
+						href="share/index.html"><i class="mdui-icon material-icons">&#xe149;</i> Share</a>
 				</div>
-				<div class="mdui-col-xs-12 mdui-col-md-10">
-					<div class="mdui-card rin-card">
-						<br />
-						<div class="rin-card-part" id="introduce" style="margin-top: 0;">
-							<div class="rin-card-content mdui-typo font3">你好，欢迎来到鹊楠的主页~<br>
-								How lucky to meet you!<br>
+			</div>
+			<div class="mdui-col-xs-12 mdui-col-md-10">
+				<div class="mdui-card rin-card">
+					<br />
+					<div class="rin-card-part" id="introduce" style="margin-top: 0;">
+						<div class="rin-card-content mdui-typo font3">你好，欢迎来到鹊楠的主页~<br>
+							How lucky to meet you!<br>
+						</div>
+					</div>
+					<br />
+					<!-- 战斗力 -->
+					<div class="rin-card-part" id="fighting">
+						<div class="rin-card-title2 mdui-typo font5"><a href="#fighting">#</a> 战斗力</div>
+						<div class="mdui-container font2">
+							<div class="mdui-row">
+								<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+									mdui-tooltip="{content: '制作网站特别菜,约等于不会'}" style="padding: 10px 10px;">
+									<div class="rin-progress-title">
+										HTML/CSS
+									</div>
+									<div class="mdui-progress">
+										<div class="mdui-progress-determinate" style="width: 10%;"></div>
+									</div>
+
+								</div>
+
+								<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+									mdui-tooltip="{content: '<del>仅限于say:1.2.3.4</del>'}" style="padding: 10px 10px;">
+									<div class="rin-progress-title">
+										英语/外语
+									</div>
+									<div class="mdui-progress">
+										<div class="mdui-progress-determinate" style="width: 1%;"></div>
+									</div>
+								</div>
+
+								<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+									mdui-tooltip="{content: '尚在<del>努力</del>学习'}" style="padding: 10px 10px;">
+									<div class="rin-progress-title">
+										JavaScript
+									</div>
+									<div class="mdui-progress">
+										<div class="mdui-progress-determinate" style="width: 5%;"></div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="mdui-row">
+								<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+									mdui-tooltip="{content: '基岩版<del><small>骨灰级</small></del>玩家'}"
+									style="padding: 10px 10px;">
+									<div class="rin-progress-title">
+										Minecraft
+									</div>
+									<div class="mdui-progress">
+										<div class="mdui-progress-determinate" style="width: 95%;"></div>
+									</div>
+								</div>
+
+								<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+									mdui-tooltip="{content: '<del>贩剑yyds</del>'}" style="padding: 10px 10px;">
+									<div class="rin-progress-title">
+										搞事情
+									</div>
+									<div class="mdui-progress">
+										<div class="mdui-progress-determinate" style="width: 100%;"></div>
+									</div>
+								</div>
+
+								<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+									mdui-tooltip="{content: '日常<b>emo</b>'}" style="padding: 10px 10px;">
+									<div class="rin-progress-title">
+										情感
+									</div>
+									<div class="mdui-progress">
+										<div class="mdui-progress-determinate" style="width: 50%;"></div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="mdui-row">
+								<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+									mdui-tooltip="{content: '<big><b>特别社恐</big></b>'}" style="padding: 10px 10px;">
+									<div class="rin-progress-title">
+										社交
+									</div>
+									<div class="mdui-progress">
+										<div class="mdui-progress-determinate" style="width: 20%;"></div>
+									</div>
+								</div>
+
+								<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+									mdui-tooltip="{content: '做事易<del>急躁</del>'}" style="padding: 10px 10px;">
+									<div class="rin-progress-title">
+										耐心
+									</div>
+									<div class="mdui-progress">
+										<div class="mdui-progress-determinate" style="width: 0%;"></div>
+									</div>
+								</div>
+
+								<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
+									mdui-tooltip="{content: '世界这么大,我想去看看'}" style="padding: 10px 10px;">
+									<div class="rin-progress-title">
+										世界
+									</div>
+									<div class="mdui-progress">
+										<div class="mdui-progress-determinate" style="width: 100%;"></div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<br />
-						<!-- 战斗力 -->
-						<div class="rin-card-part" id="fighting">
-							<div class="rin-card-title2 mdui-typo font5"><a href="#fighting">#</a> 战斗力</div>
-							<div class="mdui-container font2">
-								<div class="mdui-row">
-									<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
-										mdui-tooltip="{content: '制作网站特别菜,约等于不会'}" style="padding: 10px 10px;">
-										<div class="rin-progress-title">
-											HTML/CSS
-										</div>
-										<div class="mdui-progress">
-											<div class="mdui-progress-determinate" style="width: 10%;"></div>
-										</div>
+					</div>
+					<!-- 战斗力 -->
+					<br />
+					<!-- 联系我 -->
+					<div class="rin-card-part" id="contact">
+						<div class="rin-card-title2 mdui-typo font5"><a href="#contact">#</a> 联系我</div>
 
-									</div>
+						<a class="mdui-btn mdui-btn-raised rin-btn mdui-color-blue-accent mdui-text-capitalize mdui-shadow-8 mdui-ripple"
+							href="https://qm.qq.com/cgi-bin/qm/qr?k=i4cqkcKVkjnXlJ_28E_uDF2YsM2ofZbb&noverify=0&personal_qrcode_source=3"
+							title="2869505042" target="_blank"><span class="iconfont icon-QQ"></span>
+							QQ</a>
 
-									<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
-										mdui-tooltip="{content: '<del>仅限于say:1.2.3.4</del>'}"
-										style="padding: 10px 10px;">
-										<div class="rin-progress-title">
-											英语/外语
-										</div>
-										<div class="mdui-progress">
-											<div class="mdui-progress-determinate" style="width: 1%;"></div>
-										</div>
-									</div>
+						<a class="mdui-btn mdui-btn-raised rin-btn mdui-color-grey-900 mdui-text-capitalize mdui-shadow-8 mdui-ripple"
+							href="https://github.com/QNquenan" target="_blank"><span class="iconfont icongithub"></span>
+							Github</a>
 
-									<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
-										mdui-tooltip="{content: '尚在<del>努力</del>学习'}" style="padding: 10px 10px;">
-										<div class="rin-progress-title">
-											JavaScript
-										</div>
-										<div class="mdui-progress">
-											<div class="mdui-progress-determinate" style="width: 5%;"></div>
-										</div>
-									</div>
+						<a class="mdui-btn mdui-btn-raised rin-btn mdui-color-pink-a200 mdui-text-capitalize mdui-shadow-8 mdui-ripple"
+							href="https://space.bilibili.com/495882959" target="_blank"><span
+								class="iconfont iconbilibili"></span> Bilibili</a>
 
-								</div>
+						<a class="mdui-btn mdui-btn-raised rin-btn mdui-color-yellow-500 mdui-text-capitalize mdui-shadow-8 mdui-ripple"
+							href="mailto:2869505042@qq.com" target="_blank"><span class="iconfont iconmail_fill"></span>
+							Mail</a>
 
-								<div class="mdui-row">
-									<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
-										mdui-tooltip="{content: '基岩版<del><small>骨灰级</small></del>玩家'}"
-										style="padding: 10px 10px;">
-										<div class="rin-progress-title">
-											Minecraft
-										</div>
-										<div class="mdui-progress">
-											<div class="mdui-progress-determinate" style="width: 95%;"></div>
-										</div>
-									</div>
+					</div>
+					<!-- 联系我 -->
+					<br />
+					<!-- 作品 -->
+					<div class="rin-card-part" id="article">
+						<div class="rin-card-title2 mdui-typo font5"><a href="#article">#</a> 作品</div>
 
-									<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
-										mdui-tooltip="{content: '<del>贩剑yyds</del>'}" style="padding: 10px 10px;">
-										<div class="rin-progress-title">
-											搞事情
-										</div>
-										<div class="mdui-progress">
-											<div class="mdui-progress-determinate" style="width: 100%;"></div>
-										</div>
-									</div>
+						<div class="article">
 
-									<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
-										mdui-tooltip="{content: '日常<b>emo</b>'}" style="padding: 10px 10px;">
-										<div class="rin-progress-title">
-											情感
-										</div>
-										<div class="mdui-progress">
-											<div class="mdui-progress-determinate" style="width: 50%;"></div>
-										</div>
-									</div>
-
-								</div>
-
-								<div class="mdui-row">
-									<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
-										mdui-tooltip="{content: '<big><b>特别社恐</big></b>'}" style="padding: 10px 10px;">
-										<div class="rin-progress-title">
-											社交
-										</div>
-										<div class="mdui-progress">
-											<div class="mdui-progress-determinate" style="width: 20%;"></div>
-										</div>
-									</div>
-
-									<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
-										mdui-tooltip="{content: '做事易<del>急躁</del>'}" style="padding: 10px 10px;">
-										<div class="rin-progress-title">
-											耐心
-										</div>
-										<div class="mdui-progress">
-											<div class="mdui-progress-determinate" style="width: 0%;"></div>
-										</div>
-									</div>
-
-									<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4"
-										mdui-tooltip="{content: '世界这么大,我想去看看'}" style="padding: 10px 10px;">
-										<div class="rin-progress-title">
-											世界
-										</div>
-										<div class="mdui-progress">
-											<div class="mdui-progress-determinate" style="width: 100%;"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- 战斗力 -->
-						<br />
-						<!-- 联系我 -->
-						<div class="rin-card-part" id="contact">
-							<div class="rin-card-title2 mdui-typo font5"><a href="#contact">#</a> 联系我</div>
-
-							<a class="mdui-btn mdui-btn-raised rin-btn mdui-color-blue-accent mdui-text-capitalize mdui-shadow-8 mdui-ripple"
-								href="https://qm.qq.com/cgi-bin/qm/qr?k=i4cqkcKVkjnXlJ_28E_uDF2YsM2ofZbb&noverify=0&personal_qrcode_source=3"
-								title="2869505042" target="_blank"><span class="iconfont icon-QQ"></span>
-								QQ</a>
-
-							<a class="mdui-btn mdui-btn-raised rin-btn mdui-color-grey-900 mdui-text-capitalize mdui-shadow-8 mdui-ripple"
-								href="https://github.com/QNquenan" target="_blank"><span
-									class="iconfont icongithub"></span> Github</a>
-
-							<a class="mdui-btn mdui-btn-raised rin-btn mdui-color-pink-a200 mdui-text-capitalize mdui-shadow-8 mdui-ripple"
-								href="https://space.bilibili.com/495882959" target="_blank"><span
-									class="iconfont iconbilibili"></span> Bilibili</a>
-
-							<a class="mdui-btn mdui-btn-raised rin-btn mdui-color-yellow-500 mdui-text-capitalize mdui-shadow-8 mdui-ripple"
-								href="mailto:2869505042@qq.com" target="_blank"><span
-									class="iconfont iconmail_fill"></span> Mail</a>
-
-						</div>
-						<!-- 联系我 -->
-						<br />
-						<!-- 作品 -->
-						<div class="rin-card-part" id="article">
-							<div class="rin-card-title2 mdui-typo font5"><a href="#article">#</a> 作品</div>
-
-							<div class="article">
-
-								<a target="_blank"
+							<a target="_blank"
 								href="https://www.bilibili.com/video/BV1b3411F7qq?vd_source=f363d79bca9571a905e18dad7d7469d0"
 								style="text-decoration: none" class="zplj">
-									<div class="mdui-card rin-card rin-card-article mdui-color-transparent mdui-hoverable mdui-text-color-white-text zpcd"
-										style="margin-bottom: 10px;">
-										<div class="rin-article-title font3" style="padding: 5px 5px;">
-											<big><b>[楠之梦|里贝尔提联邦]</b></big>
-										</div>
-										<div class="rin-article-content font2" style="padding: 5px 5px;">
-											<small>建筑师:YortFl|摄影师:@AI玩游戏的鸽子凯</small>
-										</div>
+								<div class="mdui-card rin-card rin-card-article mdui-color-transparent mdui-hoverable mdui-text-color-white-text zpcd"
+									style="margin-bottom: 10px;">
+									<div class="rin-article-title font3" style="padding: 5px 5px;">
+										<big><b>[楠之梦|里贝尔提联邦]</b></big>
 									</div>
-								</a>
-							</div>
-
-						</div>
-						<!-- 作品 -->
-						<div class="rin-tr"></div>
-
-						<div class="rin-card-part" id="last">
-							<div class="rin-card-title2 font4">彼方尚有荣光在，世界不止眼前的苟且，还有诗和远方</div>
-							<div class="rin-card-content font1">There is still glory on the other side, and the world is not only about the present, but also about poetry and distant places</div>
+									<div class="rin-article-content font2" style="padding: 5px 5px;">
+										<small>建筑师:YortFl|摄影师:@AI玩游戏的鸽子凯</small>
+									</div>
+								</div>
+							</a>
 						</div>
 
-						<div class="rin-card-part" id="footer">
-							<div class="rin-card-content font3">©2022 By QueNan</div>
-						</div>
+					</div>
+					<!-- 作品 -->
+					<div class="rin-tr"></div>
+
+					<div class="rin-card-part" id="last">
+						<div class="rin-card-title2 font4">彼方尚有荣光在，世界不止眼前的苟且，还有诗和远方</div>
+						<div class="rin-card-content font1">There is still glory on the other side, and the world is not
+							only about the present, but also about poetry and distant places</div>
+					</div>
+
+					<div class="rin-card-part" id="footer">
+						<div class="rin-card-content font3">©2022 By QueNan</div>
 					</div>
 				</div>
 			</div>
-		</main>
-		<script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/mdui/js/mdui.min.js"></script>
-	</body>
+		</div>
+	</main>
+	<script src="https://cdn.jsdelivr.net/gh/AyagawaSeirin/homepage@latest/mdui/js/mdui.min.js"></script>
+</body>
+
 </html>
