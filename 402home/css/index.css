@@ -1,0 +1,486 @@
+/* 鼠标样式 */
+* {
+    cursor: url(../img/pointer32.png), auto !important;
+}
+
+a,button {
+    cursor: url(../img/link32.png), auto !important;
+}
+/* 鼠标样式 */
+
+/* 初始化 */
+::selection {
+    /*选中样式*/
+    background: rgba(255, 123, 244, 0.5);
+    color: #ffffff;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 初始化 */
+
+/* 头部 */
+.header {
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.header .xs {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.xs img {
+    transition: 0.5s;
+}
+
+.xs img:hover {
+    transform: translateY(-20px);
+}
+
+section {
+    height: 100vh;
+    position: relative;
+    color: white;
+    font-size: 6vh;
+    /* 文字阴影 */
+    text-shadow: 0.2rem 0.2rem 0.3rem rgb(0 0 0);
+    /* 弹性布局 */
+    display: flex;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+}
+
+.img {
+    overflow: hidden;
+    /* 背景图片不重复 */
+    background-repeat: no-repeat;
+    /* 背景图片位置：居中 */
+    background-position: center;
+    /* 背景图片固定 */
+    background-attachment: fixed !important;
+    background-size: cover;
+    /* 禁止用户误选中 */
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#img {
+    background: url(../img/bj.jpg);
+    background-size: cover;
+}
+
+/* 头部 */
+
+/* 打字机 */
+.text {
+    display: inline-block;
+    position: relative;
+    font-size: 35px;
+    height: 60px;
+    line-height: 60px;
+    color: rgb(245, 245, 245);
+    text-shadow: 0.2rem 0.2rem 0.3rem rgb(0 0 0);
+}
+
+.text::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: 14px;
+    height: 35px;
+    width: 7px;
+    background-color: #fff;
+    animation: san 0.5s steps(1) infinite;
+}
+
+/* 打字机 */
+
+/* 底部版权 */
+.foot-text {
+    background-image: linear-gradient(180deg, rgb(255, 253, 204), rgb(255, 179, 250));
+    position: absolute;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    width: 100%;
+    color: #000;
+    font-size: 14px;
+}
+
+.foot-text a {
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+}
+
+.foot-text a:hover {
+    color: rgb(231, 138, 235);
+}
+
+/* 底部版权 */
+
+/* 主体 */
+
+.cord-a,
+.cord-b {
+    height: 100vh;
+    width: 100%;
+    padding: 0 5% 0 5%;
+    background-attachment: fixed !important;
+    margin-bottom: 2.5%;
+}
+
+.cord-a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+.cord-a h1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cord-b {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cr-text {
+    margin: 0 10% 0 10%;
+    color: white;
+}
+
+.cr-text>h1 {
+    font-size: 3em;
+}
+
+.cr-text>p {
+    margin-top: 5%;
+    font-size: 1em;
+}
+
+.card-1 {
+    background-image: linear-gradient(0deg, rgb(179, 227, 255), rgb(255, 237, 179));
+}
+
+.card-2 {
+    background-image: linear-gradient(180deg, rgb(199, 255, 229), rgb(204, 255, 205));
+}
+
+.card-3 {
+    background-image: linear-gradient(180deg, rgb(231, 255, 184), rgb(241, 153, 255));
+}
+
+.card-4 {
+    background-image: linear-gradient(0deg, rgb(158, 255, 182), rgb(194, 199, 255));
+}
+
+.card-5 {
+    background-image: linear-gradient(180deg, rgb(182, 255, 161), rgb(255, 221, 204));
+}
+
+.card-6 {
+    background-image: linear-gradient(180deg, rgb(179, 233, 255), rgb(158, 248, 245));
+}
+
+.card-7 {
+    background-image: linear-gradient(180deg, rgb(247, 179, 255), rgb(204, 254, 255));
+}
+
+.card-8 {
+    background-image: linear-gradient(180deg, rgb(179, 255, 204), rgb(255, 207, 204));
+}
+
+.card-9 {
+    background-image: linear-gradient(180deg, rgb(255, 179, 250), rgb(255, 253, 204));
+}
+
+/* 主体 */
+
+/*卡片*/
+
+.card {
+    margin-top: 5%;
+    position: relative;
+    width: 350px;
+    height: 190px;
+    /* height: 450px; */
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.card:hover {
+    height: 450px;
+    box-shadow: 0 11px 15px -7px rgba(68, 68, 68, 0.5), 0 24px 38px 3px rgba(68, 68, 68, 0.5), 0 9px 46px 8px rgba(68, 68, 68, 0.5);
+}
+
+.imgBx {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.card:hover .imgBx {
+    width: 250px;
+    height: 250px;
+}
+
+.imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.card .content .details {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+
+.card:hover .content .details {
+    transform: translateY(0px);
+}
+
+.card .content .details h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+
+.card .content .details h2 span {
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.card .content .details .data {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.card .content .details .data h3 {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+.card .content .details .data h3 span {
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.card .content .details .actionBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.card .content .details .actionBtn button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #ff5f95;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*卡片*/
+
+/* 导航栏 */
+.nav {
+    padding-right: 1%;
+    position: fixed;
+    width: 100vw;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav h1 {
+    margin-left: 1%;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0);
+}
+
+.nav i {
+    color: white;
+}
+
+.nav:hover {
+    background: white;
+}
+
+.nav:hover i,
+.nav:hover h1 {
+    color: black;
+}
+
+/* 导航栏 */
+
+/* 导航栏下拉菜单 */
+.button {
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button ul {
+    margin-top: 2vh;
+    width: 150px;
+}
+
+.button ul li {
+    border-radius: 10px;
+    margin-bottom: 5%;
+    height: 0;
+    opacity: 0;
+    transform: translateY(-50px);
+    background-color: white;
+    transition: 0.5s;
+}
+
+.button ul li:hover {
+    background: #4ae4ff;
+    height: 45px;
+}
+
+.button ul li:hover a {
+    color: white;
+}
+
+.button ul li a {
+    font-weight: bolder;
+    color: black;
+}
+
+.button:hover li {
+    height: 50px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 导航栏下拉菜单 */
+
+
+@media (max-width: 1080px) {
+
+    .cord-a,
+    .cord-b {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .cr-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button ul li {
+        width: 100vw;
+        margin: 0;
+        border-radius: 0 0;
+    }
+
+    .button ul {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button:hover ul li {
+        height: 60px;
+    }
+
+    .button ul li:hover {
+        height: 60px;
+        background: white;
+    }
+    
+    .button ul li:hover a {
+        color: black;
+    }
+
+    .nav h1 {
+        display: none;
+    }
+
+    .nav {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .nav:hover {
+        border-bottom: 5px solid black;
+    }
+}
